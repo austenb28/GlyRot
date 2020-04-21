@@ -20,7 +20,7 @@ Execute `GlyRot.py -h` for a brief description of arguments.  Defaults values ar
 # Example
 Starting in the top directory:
 
-`cd src`
+`cd example`
 
 `GlyRot.py -gro BChEG_GMX.gro -top BChEG_GMX.top -dtheta 90`.
 
