@@ -14,8 +14,8 @@ in `~/.bashrc` and open a new terminal.
 
 A precompiled binary using Gromacs 5.1 is provided in the bin directory. GlyRot must be executed while Gromacs 5.1 is installed.  If the GlyRot exectuable must be rebuilt, a Makefile is provided in the top directory, which can be built using `make`.
 
-# Options
-Execute `GlyRot.py -h` for a brief description of options.  Defaults values are provided  for optional arguments.
+# Arguments
+Execute `GlyRot.py -h` for a brief description of arguments.  Defaults values are provided  for optional arguments.
 
 # Example
 Starting in the top directory:
