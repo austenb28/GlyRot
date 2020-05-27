@@ -112,7 +112,7 @@ def GlyRotHelper(glycur,glylen,glynum,glyend,gro_in,args,tempdir):
 
 	print("Calculating minimium energy...")
 
-	spargs = ['gmx', 'energy', '-f', 'trx_out.edr', '-o', 'trx_out.xvg']
+	spargs = [args.gex, 'energy', '-f', 'trx_out.edr', '-o', 'trx_out.xvg']
 
 	p = subprocess.Popen(
 		spargs,
