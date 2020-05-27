@@ -12,7 +12,7 @@ Download and add the bin directory to `$PATH`.  For example, in Linux, add
 
 in `~/.bashrc` and open a new terminal.
 
-A precompiled binary using Gromacs 5.1 is provided in the bin directory. GlyRot must be executed while Gromacs 5.1 is installed. More than likely, the GlyRotHelper executable must be rebuilt. A Makefile is provided in the top directory, which can be built using `make`.  GlyRotHelper uses source files only included in the original Gromacs 5.1 installation.  For this reason, the Makefile must be edited to contain the src directory of the original Gromacs 5.1 package.  For example, if the original Gromacs 5.1 package was downloaded and extracted to /home/username/gromacs/gromacs-5.1, then the include line should look like `INCLUDE=/home/username/gromacs/src`.
+A precompiled binary using Gromacs 5.1 is provided in the bin directory. GlyRot must be executed while Gromacs 5.1 is installed. More than likely, the GlyRotHelper executable must be rebuilt. A Makefile is provided in the top directory, which can be built using `make`.  GlyRotHelper uses source files only included in the original Gromacs 5.1 installation.  For this reason, the Makefile must be edited to contain the src directory of the original Gromacs 5.1 package.  For example, if the original Gromacs 5.1 package was downloaded and extracted to /home/username/gromacs/gromacs-5.1, then the include line should look like `INCLUDE=/home/username/gromacs/src`.  Additionally, the Makefile is provided assuming gromacs is not built with mpi.  If building with mpi, `libgromacs` needs to be changed to `libgromacs_mpi`.
 
 # Arguments
 Execute `GlyRot.py -h` for a brief description of arguments.  Defaults values are provided  for optional arguments.
