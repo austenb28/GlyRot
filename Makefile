@@ -3,6 +3,7 @@ LDFLAGS =
 SOURCES = src/GlyRotHelper.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
 EXECUTABLE = bin/GlyRotHelper
+INCLUDE = /path/to/gromacs-5.1/src
 
 ifeq "$(origin GMXLDLIB)" "undefined"
   $(error "GMXLDLIB not found, please source GMXRC")
@@ -12,6 +13,8 @@ endif
 
 CPPFLAGS += `pkg-config --cflags libgromacs`
 LDFLAGS += `pkg-config --libs libgromacs`
+
+CPPFLAGS += -I$(INCLUDE)
 
 all: $(SOURCES) $(EXECUTABLE)
 
