@@ -2,7 +2,7 @@
 Takes an N-glycosylated glycoprotein in Gromacs generated with the Glycam forcefield and systematically generates a feasible configuration of N-glycans.  This is accomplished via rigid rotation about three bonds per N-glycan.
 
 # Requirements
-* Python3 or greater
+* Python3
 * Gromacs 5.1
 
 # Installation
